@@ -1,0 +1,22 @@
+{
+  "description": "Adds a blank tab to all windows",
+  "manifest_version": 2,
+  "name": "Blankify",
+  "version": "3.4",
+  "browser_action": {
+    "default_title": "Blankify 3.4",
+    "default_icon": "icons/page-32.png",
+    "default_popup": "popup/choose.html"
+  },
+  "permissions": [
+    "tabs",
+    "<all_urls>",
+	"activeTab"
+  ],
+  "icons": {
+    "48": "icons/page-48.png"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
